@@ -22,6 +22,10 @@
             font-family: 'Poppins', sans-serif;
         }
 
+        .actives {
+            border-bottom: 3px solid #0e3825;
+        }
+
         .full-height {
             height: 100vh;
             display: flex;
@@ -34,17 +38,16 @@
             font-weight: 600;
         }
 
+        .tour-nav {
+            margin-top: 20px;
+        }
+
         .carousel-item img {
             border-radius: 14px;
         }
 
         .tour-details {
             margin: 0 160px;
-        }
-
-        .img-fluid {
-            max-width: 100%;
-            height: auto;
         }
 
         .price h3, .price h4 {
@@ -109,15 +112,28 @@
                 height: 40px;
                 font-size: .7rem;
             }
+
+            .elDetails img {
+                height: 180px;
+            }
+
+            .elTour {
+                font-size: 1.2rem;
+                font-weight: 600;
+            }
+
+            .tour-nav {
+                margin-top: 0;
+            }
         }
     </style>
 </head>
 
-<body>
+<body id="page-top">
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <a class="navbar-brand" href="#page-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" style="border: 1px solid rgba(51, 49, 49, 0.21)">
+        <a class="navbar-brand" href="index.html">
             <img src="img/logo2.png" width="180" height="40" class="d-inline-block align-top" alt="Logo">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -129,7 +145,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="index.html">Home</a>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item active actives">
                     <a class="nav-link" href="#page-top">Tour</a>
                 </li>
                 <li class="nav-item">
@@ -144,7 +160,7 @@
 
     <!-- Main Content -->
     <div class="container-fluid p-0">
-        <section id="nav" class="full-height bg-light d-flex flex-column">
+        <section id="nav" class="full-height tour-nav bg-light d-flex flex-column">
             <div class="container">
                 <h6 class="text-secondary text-center pb-2">TOUR</h6>
                 <h2 class="text-center sheenas-text">Sheena's Pension House Tour</h2>
@@ -193,7 +209,7 @@
             <div class="container-fluid tour-details">
                 <div class="row d-flex justify-content-around align-items-center">
                     <div class="col-lg-6">
-                        <div class="details text-dark">
+                        <div class="details text-dark p-3">
                             <h1 class="fw-bolder sheenas-text">FIREFLY WATCHING</h1>
                             <div class="description my-3">
                                 <p class="text-muted">Explore unique opportunity to connect with nature, learn about
@@ -271,8 +287,8 @@
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <div class="details pt-4 text-dark">
-                            <h1 class="fw-bolder sheenas-text">UNDERGROUND RIVER</h1>
+                        <div class="details text-dark p-3">
+                            <h1 class="fw-bolder sheenas-text pt-2">UNDERGROUND RIVER</h1>
                             <div class="description my-3">
                                 <p class="text-muted">Board a boat and glide along the gentle currents of the
                                     underground
@@ -299,7 +315,7 @@
             <div class="container-fluid tour-details">
                 <div class="row justify-content-around align-items-center">
                     <div class="col-lg-6">
-                        <div class="details text-dark">
+                        <div class="details text-dark p-3">
                             <h1 class="fw-bolder sheenas-text">HONDA BAY</h1>
                             <div class="description my-3">
                                 <p class="text-muted">Embark on an island-hopping adventure across Honda Bay's
@@ -375,8 +391,8 @@
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <div class="details text-dark pt-4">
-                            <h1 class="fw-bolder sheenas-text">CITY TOUR</h1>
+                        <div class="details text-dark p-3">
+                            <h1 class="fw-bolder sheenas-text pt-2">CITY TOUR</h1>
                             <div class="description my-3">
                                 <p class="text-muted">Experience the vibrant atmosphere of Puerto Princesa's bustling
                                     markets, where you can sample exotic fruits, fresh seafood, and local delicacies.
@@ -403,15 +419,15 @@
 
         <section id="elNido" class="bg-white text-dark">
             <div class="container-fluid p-5 d-flex flex-column align-items-center justify-content-center">
-                <div class="title text-center">
+                <div class="title text-center w-50">
                     <h6 class="text-secondary text-center pb-2">EL NIDO</h6>
                     <h2 class="text-center sheenas-text">Island Hopping</h2>
                     <hr class="divider" />
                 </div>
                 <div class="row">
-                    <div class="col-md-6 p-3">
-                        <h4>Tour A</h4>
-                        <img src="img/elNido/1.jpg" alt="Island 1" class="img-fluid rounded">
+                    <div class="elDetails col-md-6 p-3">
+                        <h4 class="elTour">Tour A</h4>
+                        <img src="img/elNido/1.jpg" height="300" alt="Island 1" class="rounded">
                         <div class="elNido-details d-flex justify-content-between align-items-center pt-3">
                             <div class="price">
                                 <h6>Price:</h6>
@@ -425,9 +441,9 @@
                         </div>
                     </div>
 
-                    <div class="col-md-6 p-3">
-                        <h4>Tour B</h4>
-                        <img src="img/elNido/3.jpg" alt="Island 2" class="img-fluid rounded">
+                    <div class="elDetails col-md-6 p-3">
+                        <h4 class="elTour">Tour B</h4>
+                        <img src="img/elNido/3.jpg" height="300" alt="Island 2" class="rounded">
                         <div class="elNido-details d-flex justify-content-between align-items-center pt-3">
                             <div class="price">
                                 <h6>Price:</h6>
@@ -443,9 +459,9 @@
                 </div>
                 <hr class="divider" />
                 <div class="row">
-                    <div class="col-md-6 p-3">
-                        <h4>Tour C</h4>
-                        <img src="img/elNido/1.jpg" alt="Island 3" class="img-fluid rounded">
+                    <div class="elDetails col-md-6 p-3">
+                        <h4 class="elTour">Tour C</h4>
+                        <img src="img/elNido/1.jpg" height="300" alt="Island 3" class="rounded">
                         <div class="elNido-details d-flex justify-content-between align-items-center pt-3">
                             <div class="price">
                                 <h6>Price:</h6>
@@ -459,9 +475,9 @@
                         </div>
                     </div>
 
-                    <div class="col-md-6 p-3">
-                        <h4>Tour D</h4>
-                        <img src="img/elNido/3.jpg" alt="Island 4" class="img-fluid rounded">
+                    <div class="elDetails col-md-6 p-3">
+                        <h4 class="elTour">Tour D</h4>
+                        <img src="img/elNido/3.jpg" height="300" alt="Island 4" class="rounded">
                         <div class="elNido-details d-flex justify-content-between align-items-center pt-3">
                             <div class="price">
                                 <h6>Price:</h6>
