@@ -33,13 +33,50 @@
             justify-content: center;
         }
 
+        .sheenas-text {
+            color: #0e3825;
+            font-weight: 600;
+        }
+
+        .menu-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            margin-bottom: 15px;
+            border-radius: 16px;
+        }
+
+        .menu-item h5 {
+            margin-bottom: 5px;
+        }
+
+        .menu-item p {
+            margin-bottom: 0;
+        }
+
+        .carousel-item {
+            padding: 15px;
+        }
+
+        @media (max-width: 576px) {
+            .menu-item {
+                margin-bottom: 40px;
+            }
+
+            .sheenas-text {
+                font-size: 1.5rem;
+                font-weight: 800;
+                text-align: center;
+            }
+        }
     </style>
 </head>
 
 <body id="page-top">
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" style="border: 1px solid rgba(51, 49, 49, 0.21)">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top"
+        style="border: 1px solid rgba(51, 49, 49, 0.21)">
         <a class="navbar-brand" href="#page-top">
             <img src="img/logo2.png" width="180" height="40" class="d-inline-block align-top" alt="Logo">
         </a>
@@ -66,34 +103,409 @@
     </nav>
 
     <!-- Main Content -->
-    <div class="container-fluid p-0">
-        <section id="welcome1" class="full-height text-white mt-3">
-            <div class="container welcome-text">
-                <h1>Welcome</h1>
-            </div>
+    <div class="container-fluid p-0 mt-5 pt-3">
+        <section id="sheenas-menu" class="bg-light w-100 d-flex flex-column align-items-center">
+            <h6 class="text-secondary text-center pt-4 pb-2">MENU</h6>
+            <h2 class="text-center sheenas-text w-75">Sheena's Pension House Menu</h2>
+            <hr class="divider w-75">
+            <section id="breakfast"
+                class="container-fluid d-flex align-items-center justify-content-center sheenas-menu">
+                <div class="col-md-10 p-4 full-menu d-flex flex-column"
+                    style="background-color: #ffeac6a7; border: 1px solid black; border-radius: 16px;">
+                    <h2 class="text-left sheenas-text">Breakfast</h2>
+                    <div id="breakfastCarousel" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="menu-item">
+                                            <img src="img/portfolio/fullsize/1.jpg" alt="Drink 1">
+                                            <h5 class="sheenas-text text-left">Coffee</h5>
+                                            <hr class="divider">
+                                            <div class="price d-flex justify-content-between">
+                                                <h6>Price:</h6>
+                                                <h5>₱ 1,100.00</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="menu-item">
+                                            <img src="img/portfolio/fullsize/2.jpg" alt="Drink 2">
+                                            <h5 class="sheenas-text text-left">Fresh Juice</h5>
+                                            <hr class="divider">
+                                            <div class="price d-flex justify-content-between">
+                                                <h6>Price:</h6>
+                                                <h5>₱ 1,100.00</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="menu-item">
+                                            <img src="img/portfolio/fullsize/3.jpg" alt="Drink 3">
+                                            <h5 class="sheenas-text text-left">Smoothies</h5>
+                                            <hr class="divider">
+                                            <div class="price d-flex justify-content-between">
+                                                <h6>Price:</h6>
+                                                <h5>₱ 1,100.00</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="menu-item">
+                                            <img src="img/portfolio/fullsize/4.jpg" alt="Breakfast 1">
+                                            <h5 class="sheenas-text text-left">Classic Pancakes</h5>
+                                            <hr class="divider">
+                                            <div class="price d-flex justify-content-between">
+                                                <h6>Price:</h6>
+                                                <h5>₱ 1,100.00</h5>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="menu-item">
+                                            <img src="img/portfolio/fullsize/5.jpg" alt="Breakfast 2">
+                                            <h5 class="sheenas-text text-left">Omelette</h5>
+                                            <hr class="divider">
+                                            <div class="price d-flex justify-content-between">
+                                                <h6>Price:</h6>
+                                                <h5>₱ 1,100.00</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="menu-item">
+                                            <img src="img/portfolio/fullsize/6.jpg" alt="Breakfast 3">
+                                            <h5 class="sheenas-text text-left">Fruit Salad</h5>
+                                            <hr class="divider">
+                                            <div class="price d-flex justify-content-between">
+                                                <h6>Price:</h6>
+                                                <h5>₱ 1,100.00</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#breakfastCarousel" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#breakfastCarousel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                    <div class="see-all d-flex align-items-center justify-content-center">
+                        <a href=""><button class="btn btn-success">See All Breakfast ...</button></a>
+                    </div>
+                </div>
+            </section>
+
+
+            <section id="lunch" class="container-fluid d-flex align-items-center justify-content-center sheenas-menu">
+                <div class="col-md-10 mt-5 p-4 full-menu d-flex flex-column"
+                    style="background-color: #ffeac643; border: 1px solid rgba(0, 0, 0, 0.259); border-radius: 16px;">
+                    <h2 class="text-left sheenas-text">Lunch</h2>
+                    <div id="lunchCarousel" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="menu-item">
+                                            <img src="img/portfolio/fullsize/1.jpg" alt="Drink 1">
+                                            <h5 class="sheenas-text text-left">Coffee</h5>
+                                            <hr class="divider">
+                                            <div class="price d-flex justify-content-between">
+                                                <h6>Price:</h6>
+                                                <h5>₱ 1,100.00</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="menu-item">
+                                            <img src="img/portfolio/fullsize/2.jpg" alt="Drink 2">
+                                            <h5 class="sheenas-text text-left">Fresh Juice</h5>
+                                            <hr class="divider">
+                                            <div class="price d-flex justify-content-between">
+                                                <h6>Price:</h6>
+                                                <h5>₱ 1,100.00</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="menu-item">
+                                            <img src="img/portfolio/fullsize/3.jpg" alt="Drink 3">
+                                            <h5 class="sheenas-text text-left">Smoothies</h5>
+                                            <hr class="divider">
+                                            <div class="price d-flex justify-content-between">
+                                                <h6>Price:</h6>
+                                                <h5>₱ 1,100.00</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="menu-item">
+                                            <img src="img/portfolio/fullsize/4.jpg" alt="Breakfast 1">
+                                            <h5 class="sheenas-text text-left">Classic Pancakes</h5>
+                                            <hr class="divider">
+                                            <div class="price d-flex justify-content-between">
+                                                <h6>Price:</h6>
+                                                <h5>₱ 1,100.00</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="menu-item">
+                                            <img src="img/portfolio/fullsize/5.jpg" alt="Breakfast 2">
+                                            <h5 class="sheenas-text text-left">Omelette</h5>
+                                            <hr class="divider">
+                                            <div class="price d-flex justify-content-between">
+                                                <h6>Price:</h6>
+                                                <h5>₱ 1,100.00</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="menu-item">
+                                            <img src="img/portfolio/fullsize/6.jpg" alt="Breakfast 3">
+                                            <h5 class="sheenas-text text-left">Fruit Salad</h5>
+                                            <hr class="divider">
+                                            <div class="price d-flex justify-content-between">
+                                                <h6>Price:</h6>
+                                                <h5>₱ 1,100.00</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#lunchCarousel" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#lunchCarousel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                    <div class="see-all d-flex align-items-center justify-content-center">
+                        <a href=""><button class="btn btn-outline-success">See All Breakfast ...</button></a>
+                    </div>
+                </div>
+            </section>
+
+
+            <section id="snacks" class="container-fluid d-flex align-items-center justify-content-center sheenas-menu">
+                <div class="col-md-10 mt-5 p-4 full-menu d-flex flex-column"
+                    style="background-color: #ffeac6a7; border: 1px solid black; border-radius: 16px;">
+                    <h2 class="text-left sheenas-text">Snacks</h2>
+                    <div id="snacksCarousel" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="menu-item">
+                                            <img src="img/portfolio/fullsize/1.jpg" alt="Drink 1">
+                                            <h5 class="sheenas-text text-left">Coffee</h5>
+                                            <hr class="divider">
+                                            <div class="price d-flex justify-content-between">
+                                                <h6>Price:</h6>
+                                                <h5>₱ 1,100.00</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="menu-item">
+                                            <img src="img/portfolio/fullsize/2.jpg" alt="Drink 2">
+                                            <h5 class="sheenas-text text-left">Fresh Juice</h5>
+                                            <hr class="divider">
+                                            <div class="price d-flex justify-content-between">
+                                                <h6>Price:</h6>
+                                                <h5>₱ 1,100.00</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="menu-item">
+                                            <img src="img/portfolio/fullsize/3.jpg" alt="Drink 3">
+                                            <h5 class="sheenas-text text-left">Smoothies</h5>
+                                            <hr class="divider">
+                                            <div class="price d-flex justify-content-between">
+                                                <h6>Price:</h6>
+                                                <h5>₱ 1,100.00</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="menu-item">
+                                            <img src="img/portfolio/fullsize/4.jpg" alt="Breakfast 1">
+                                            <h5 class="sheenas-text text-left">Classic Pancakes</h5>
+                                            <hr class="divider">
+                                            <div class="price d-flex justify-content-between">
+                                                <h6>Price:</h6>
+                                                <h5>₱ 1,100.00</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="menu-item">
+                                            <img src="img/portfolio/fullsize/5.jpg" alt="Breakfast 2">
+                                            <h5 class="sheenas-text text-left">Omelette</h5>
+                                            <hr class="divider">
+                                            <div class="price d-flex justify-content-between">
+                                                <h6>Price:</h6>
+                                                <h5>₱ 1,100.00</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="menu-item">
+                                            <img src="img/portfolio/fullsize/6.jpg" alt="Breakfast 3">
+                                            <h5 class="sheenas-text text-left">Fruit Salad</h5>
+                                            <hr class="divider">
+                                            <div class="price d-flex justify-content-between">
+                                                <h6>Price:</h6>
+                                                <h5>₱ 1,100.00</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#snacksCarousel" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#snacksCarousel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                    <div class="see-all d-flex align-items-center justify-content-center">
+                        <a href=""><button class="btn btn-success">See All Breakfast ...</button></a>
+                    </div>
+                </div>
+            </section>
+
+
+            <section id="drinks" class="container-fluid d-flex align-items-center justify-content-center sheenas-menu">
+                <div class="col-md-10 my-5 p-4 full-menu d-flex flex-column"
+                    style="background-color: #ffeac643; border: 1px solid rgba(0, 0, 0, 0.259); border-radius: 16px;">
+                    <h2 class="text-left sheenas-text">Drinks</h2>
+                    <div id="drinksCarousel" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="menu-item">
+                                            <img src="img/portfolio/fullsize/1.jpg" alt="Drink 1">
+                                            <h5 class="sheenas-text text-left">Coffee</h5>
+                                            <hr class="divider">
+                                            <div class="price d-flex justify-content-between">
+                                                <h6>Price:</h6>
+                                                <h5>₱ 1,100.00</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="menu-item">
+                                            <img src="img/portfolio/fullsize/2.jpg" alt="Drink 2">
+                                            <h5 class="sheenas-text text-left">Fresh Juice</h5>
+                                            <hr class="divider">
+                                            <div class="price d-flex justify-content-between">
+                                                <h6>Price:</h6>
+                                                <h5>₱ 1,100.00</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="menu-item">
+                                            <img src="img/portfolio/fullsize/3.jpg" alt="Drink 3">
+                                            <h5 class="sheenas-text text-left">Smoothies</h5>
+                                            <hr class="divider">
+                                            <div class="price d-flex justify-content-between">
+                                                <h6>Price:</h6>
+                                                <h5>₱ 1,100.00</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="menu-item">
+                                            <img src="img/portfolio/fullsize/4.jpg" alt="Breakfast 1">
+                                            <h5 class="sheenas-text text-left">Classic Pancakes</h5>
+                                            <hr class="divider">
+                                            <div class="price d-flex justify-content-between">
+                                                <h6>Price:</h6>
+                                                <h5>₱ 1,100.00</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="menu-item">
+                                            <img src="img/portfolio/fullsize/5.jpg" alt="Breakfast 2">
+                                            <h5 class="sheenas-text text-left">Omelette</h5>
+                                            <hr class="divider">
+                                            <div class="price d-flex justify-content-between">
+                                                <h6>Price:</h6>
+                                                <h5>₱ 1,100.00</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="menu-item">
+                                            <img src="img/portfolio/fullsize/6.jpg" alt="Breakfast 3">
+                                            <h5 class="sheenas-text text-left">Fruit Salad</h5>
+                                            <hr class="divider">
+                                            <div class="price d-flex justify-content-between">
+                                                <h6>Price:</h6>
+                                                <h5>₱ 1,100.00</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#drinksCarousel" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#drinksCarousel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                    <div class="see-all d-flex align-items-center justify-content-center">
+                        <a href=""><button class="btn btn-outline-success">See All Breakfast ...</button></a>
+                    </div>
+                </div>
+            </section>
         </section>
-        <section id="welcome2" class="full-height section2 text-white bg-secondary">
-            <div class="container d-flex flex-column align-items-center justify-content-center">
-                <h1>Welcome 2</h1>
-            </div>
-        </section>
-        <section id="welcome3" class="full-height section3 text-white bg-success">
-            <div class="container d-flex flex-column align-items-center justify-content-center">
-                <h1>Welcome 3</h1>
-            </div>
-        </section>
-        <section id="welcome4" class="full-height section4 text-white bg-danger">
-            <div class="container d-flex flex-column align-items-center justify-content-center">
-                <h1>Welcome 4</h1>
-            </div>
-        </section>
+
         <footer class="bg-light py-3">
             <div class="container px-4 px-lg-5">
                 <div class="small text-center text-muted">Copyright &copy; 2024 - Sheena's Pension House</div>
             </div>
         </footer>
     </div>
-
     <!-- Bootstrap JS and dependencies -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
